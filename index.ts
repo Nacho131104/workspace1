@@ -1,3 +1,14 @@
-console.log("Hola mundo")
-console.log("Hola mundito")
-console.log("Hola mundo 3")
+
+const personaje1 =  fetch("https://rickandmortyapi.com/api/character/2")
+
+
+personaje1.then((response)=>{
+
+    const data = response.json()
+    data.then((personaje)=>{
+        console.log(personaje)
+    })
+}).catch((error)=>{
+
+    console.log("Error en la peticion")
+})
