@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts"
+    "start": "ts-node index.ts",
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "@types/axios": "^0.9.36",
     "@types/node": "^24.8.0",
